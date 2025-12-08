@@ -14,6 +14,7 @@ So I built the chat equivalent of a burn-after-reading note … except it’s wr
 
 ### Features (that actually matter)
 - End-to-end encryption (X25519 + AES-256-GCM + HKDF-SHA512)  
+- "Disposable" OpenVPN tunnel between peers
 - No server side code whatsoever (static files only)  
 - No accounts, no phone numbers, no metadata  
 - Perfect forward secrecy on every new session  
