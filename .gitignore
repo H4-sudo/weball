@@ -1,0 +1,59 @@
+# === Build artifacts (C → WebAssembly with Emscripten) ===
+build/
+*.o
+*.a
+*.so
+*.wasm
+*.wasm.js
+*.wast
+*.wat
+*.html          # emscripten generates index.html unless you use -s SINGLE_FILE=1
+*.js            # any generated glue JS (except your hand-written ones)
+a.out
+a.wasm
+
+# === Final binaries / deliverables ===
+weball
+weball.wasm
+weball.js
+weball.html
+
+# === Emscripten cache (huge, never commit) ===
+.emscripten_cache/
+.emscripten_sanity
+
+# === Other common C build junk ===
+*.dSYM/
+*.exe
+*.out
+*.obj
+*.lib
+*.dll
+
+# === Editor / OS garbage ===
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+
+# === Node / JS ===
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# === Python / tools ===
+venv/
+.env
+*.log
+
+# === Keep these folders tracked but empty ===
+!build/.gitignore
+!src/.keep
+!include/.keep
+!tests/.keep
