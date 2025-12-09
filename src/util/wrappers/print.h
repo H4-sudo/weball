@@ -16,6 +16,6 @@ void infoln(const char *fmt, ...);
 void warnln(const char *fmt, ...);
 void errorln(const char *fmt, ...);
 
-void set_debug_enabled(int enabled);
+void set_debug_enabled(switch_t enabled);
 
 #endif
